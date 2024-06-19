@@ -8,6 +8,7 @@ namespace P99RaidBot.Service
 {
     public class AudioData
     {
+        public ulong guildId { get; set; }
         public required AudioStream AudioStream { get; set; }
         public required IAudioClient AudioClient { get; set; }
         public required IVoiceChannel VoiceChannel { get; set; }
